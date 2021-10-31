@@ -1,0 +1,4 @@
+POST http://localhost:3333/register 
+Content-Type: application/json
+
+{"name":"Murilo", "email":"murilomaia.bb@gmail.com"}
