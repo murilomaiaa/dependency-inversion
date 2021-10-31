@@ -1,4 +1,4 @@
-import { NodemailerEmailProvider } from "../providers/NodemailerEmailProvider";
+import { NodemailerEmailProvider } from "../providers";
 
 export class SendWelcomeEmailService {
   private mailProvider: NodemailerEmailProvider

@@ -1,9 +1,9 @@
-import { NodemailerEmailProvider } from "../providers/NodemailerEmailProvider";
+import { SESMailProvider } from "../providers";
 
 export class SendForgotEmailService {
-  private mailProvider: NodemailerEmailProvider
+  private mailProvider: SESMailProvider
 
-  constructor(mailProvider: NodemailerEmailProvider){
+  constructor(mailProvider: SESMailProvider){
     this.mailProvider = mailProvider
   }
 

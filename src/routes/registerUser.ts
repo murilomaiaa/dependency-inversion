@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { NodemailerEmailProvider } from "../providers/NodemailerEmailProvider";
+import { NodemailerEmailProvider } from "../providers";
 import { SendWelcomeEmailService } from "../services";
 
 export const registerUser =async  (request: Request, response: Response) =>{
