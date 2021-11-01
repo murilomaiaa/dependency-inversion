@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 import { IMailProvider, SendMailParams } from './IMailProvider';
 
-export class NodemailerEmailProvider implements IMailProvider {
+export class NodemailerMailProvider implements IMailProvider {
   private transporter: nodemailer.Transporter;
 
   constructor(){

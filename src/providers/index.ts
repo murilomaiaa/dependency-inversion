@@ -1,3 +1,3 @@
 export * from './IMailProvider'
-export * from './NodemailerEmailProvider'
+export * from './NodemailerMailProvider'
 export * from './SESMailProvider'
