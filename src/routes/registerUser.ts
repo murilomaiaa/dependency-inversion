@@ -1,14 +1,12 @@
 import { Request, Response } from "express";
-import { NodemailerEmailProvider } from "../providers";
-import { SendWelcomeEmailService } from "../services";
+import { makeSendWelcomeEmailService } from "../factories";
 
 export const registerUser =async  (request: Request, response: Response) =>{
   const { name, email } = request.body
   
   // validations and other business rules
 
-  const mailProvider = new NodemailerEmailProvider();
-  const sendWelcomeEmail = new SendWelcomeEmailService(mailProvider);
+  const sendWelcomeEmail =  makeSendWelcomeEmailService();
 
   await sendWelcomeEmail.execute(email, name)
 
