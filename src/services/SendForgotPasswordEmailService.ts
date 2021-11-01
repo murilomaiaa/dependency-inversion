@@ -1,11 +1,11 @@
-import { SESMailProvider } from "../providers";
+import { IMailProvider } from "../providers";
 
 export class SendForgotEmailService {
-  private mailProvider: SESMailProvider
+private mailProvider: IMailProvider
 
-  constructor(mailProvider: SESMailProvider){
-    this.mailProvider = mailProvider
-  }
+constructor(mailProvider: IMailProvider){
+  this.mailProvider = mailProvider
+}
 
   public async execute(email: string): Promise<void> {
    await this.mailProvider.sendMail({

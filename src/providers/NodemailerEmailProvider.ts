@@ -1,13 +1,7 @@
 import nodemailer from 'nodemailer'
+import { IMailProvider, SendMailParams } from './IMailProvider';
 
-type SendMailParams = {
-  to: string
-  subject: string
-  text: string
-  html: string
-}
-
-export class NodemailerEmailProvider {
+export class NodemailerEmailProvider implements IMailProvider {
   private transporter: nodemailer.Transporter;
 
   constructor(){
@@ -22,7 +16,7 @@ export class NodemailerEmailProvider {
     });
   }
 
-  async sendMail({html,subject,text,to}: SendMailParams){
+  async sendMail({ html, subject, text, to }: SendMailParams){
     let info = await this.transporter.sendMail({
       from: '"Our Application" <contact@ourapp.com>',
       to,

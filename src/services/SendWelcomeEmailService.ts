@@ -1,9 +1,9 @@
-import { NodemailerEmailProvider } from "../providers";
+import { IMailProvider } from "../providers";
 
 export class SendWelcomeEmailService {
-  private mailProvider: NodemailerEmailProvider
+  private mailProvider: IMailProvider
 
-  constructor(mailProvider: NodemailerEmailProvider){
+  constructor(mailProvider: IMailProvider){
     this.mailProvider = mailProvider
   }
 

@@ -1,14 +1,8 @@
 import nodemailer, { Transporter } from 'nodemailer';
 import aws from 'aws-sdk';
+import { IMailProvider, SendMailParams } from './IMailProvider';
 
-type SendMailParams = {
-  to: string
-  subject: string
-  text: string
-  html: string
-} 
-
-export class SESMailProvider  {
+export class SESMailProvider implements IMailProvider {
   private client: Transporter;
 
   constructor() {
