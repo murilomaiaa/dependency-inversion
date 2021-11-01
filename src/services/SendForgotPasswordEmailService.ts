@@ -1,6 +1,6 @@
 import { IMailProvider } from "../providers";
 
-export class SendForgotEmailService {
+export class SendForgotPasswordEmailService {
 private mailProvider: IMailProvider
 
 constructor(mailProvider: IMailProvider){
