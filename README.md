@@ -1,5 +1,7 @@
 # Dependency inversion explained
 
+This repository is used to explain what is dapandency inversion and how to apply it. [Read the article](https://dev.to/murilomaiaa/dependency-inversion-explained-3olm).
+
 NodeJs is required to run this project. If you don't have it installed install [here](https://nodejs.org/en/download/).
 
 ## Executing api 
