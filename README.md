@@ -1,6 +1,6 @@
 # Dependency inversion explained
 
-NodeJs is required to run this project. If you don't have it installed install [here] (https://nodejs.org/en/download/).
+NodeJs is required to run this project. If you don't have it installed install [here](https://nodejs.org/en/download/).
 
 ## Executing api 
 
